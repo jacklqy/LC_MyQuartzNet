@@ -4,6 +4,8 @@ using LC_QuartzNet.CustomLog;
 using Quartz;
 using Quartz.Impl;
 using Quartz.Logging;
+using Quartz.Simpl;
+using Quartz.Xml;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,8 +61,17 @@ namespace LC_QuartzNet
 
             #region scheduler 创建单元/实例
             Console.WriteLine("初始化scheduler......");
-            StdSchedulerFactory factory = new StdSchedulerFactory();
-            IScheduler scheduler = await factory.GetScheduler();
+            //StdSchedulerFactory factory = new StdSchedulerFactory();
+            //IScheduler scheduler = await factory.GetScheduler();
+            IScheduler scheduler = await ScheduleManager.BuildScheduler();
+
+            {
+                //使用配置文件
+                XMLSchedulingDataProcessor processor = new XMLSchedulingDataProcessor(new SimpleTypeLoadHelper());
+                //quartz_jobs.xml右键属性设置为‘始终复杂’
+                await processor.ProcessFileAndScheduleJobs("~/CfgFiles/quartz_jobs.xml", scheduler);
+            }
+
             {
                 //添加ISchedulerListener监听
                 scheduler.ListenerManager.AddSchedulerListener(new CustomSchedulerListener());
@@ -72,53 +83,84 @@ namespace LC_QuartzNet
             await scheduler.Start();
             #endregion
 
-            #region Job 创建作业
-            IJobDetail jobDetail = JobBuilder.Create<TestJob>()
-                 .WithIdentity("testjob", "group1")
-                 .WithDescription("This is TestJob")
-                 .Build();
+            #region 通过配置文件后，这里就可以不需要了
+            ////1
+            //{
+            //    #region Job 创建作业
+            //    //创建作业
+            //    IJobDetail jobDetail = JobBuilder.Create<TestJob>()
+            //         .WithIdentity("TestJob", "Group1")//分组必须一致
+            //         .WithDescription("This is TestJob")
+            //         .Build();
 
-            //jobDetail传参
-            jobDetail.JobDataMap.Add("parameter1", "table1");
-            jobDetail.JobDataMap.Add("parameter2", "table2");
-            jobDetail.JobDataMap.Add("parameter3", 333);
-            jobDetail.JobDataMap.Add("Year", DateTime.Now.Year);
+            //    //jobDetail传参
+            //    jobDetail.JobDataMap.Add("parameter1", "table1");
+            //    jobDetail.JobDataMap.Add("parameter2", "table2");
+            //    jobDetail.JobDataMap.Add("parameter3", 333);
+            //    jobDetail.JobDataMap.Add("Year", DateTime.Now.Year);
+            //    #endregion
+
+            //    #region Trigger 创建时间策略
+            //    ////创建时间策略 Cron
+            //    //ITrigger trigger = TriggerBuilder.Create()
+            //    //    .WithIdentity("testtrigger1", "group1")
+            //    //    //.StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(5))) //5秒后启动
+            //    //    .StartNow()//立即启动
+            //    //               //.WithCronSchedule("0 0/1 * * * ?")//每隔一分钟
+            //    //     .WithCronSchedule("0/10 * * * * ?")//每隔10秒运行一次
+            //    //    .WithDescription("This is TestJob's Trigger")
+            //    //    .Build();
+
+            //    //创建时间策略 Simple
+            //    ITrigger trigger = TriggerBuilder.Create()
+            //            .WithIdentity("TestJobTrigger1", "Group1")//分组必须一致
+            //                                                      //.StartNow()//立即启动
+            //            .StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(5)))//5秒后启动
+            //            .WithSimpleSchedule(x => x
+            //                .WithIntervalInSeconds(10) //10秒循环一次
+            //                .RepeatForever()//一直执行
+            //                                //.WithRepeatCount(2) //只循环10次
+            //                )
+            //            .WithDescription("This is TestJob's Trigger")
+            //            .Build();
+
+            //    //trigger传参
+            //    trigger.JobDataMap.Add("parameter5", "存储过程");
+            //    trigger.JobDataMap.Add("parameter6", "222000");
+            //    trigger.JobDataMap.Add("parameter7", 333000);
+            //    trigger.JobDataMap.Add("Year", DateTime.Now.Year + 10);//加一下试试 
+            //    #endregion
+
+            //    await scheduler.ScheduleJob(jobDetail, trigger);
+            //    Console.WriteLine("scheduler作业添加完成......");
+            //}
+
+            ////2
+            //{
+            //    #region Job 创建作业
+            //    //创建作业
+            //    IJobDetail jobDetail = JobBuilder.Create<GoodJob>()
+            //        .WithIdentity("GoodJob", "Group2")//分组必须一致
+            //        .WithDescription("This is GoodJob")
+            //        .Build();
+            //    #endregion
+
+            //    #region Trigger 创建时间策略
+            //    //创建时间策略 Cron
+            //    ITrigger trigger = TriggerBuilder.Create()
+            //        .WithIdentity("GoodJobTrigger1", "Group2")//分组必须一致
+            //        .StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(10))) //10秒后启动
+            //                                                                  //.StartNow()//立即启动
+            //                                                                  //.WithCronSchedule("0 0/1 * * * ?")//每隔一分钟
+            //         .WithCronSchedule("0/10 * * * * ?")//每隔10秒运行一次
+            //        .WithDescription("This is GoodJob's Trigger")
+            //        .Build();
+            //    #endregion
+
+            //    await scheduler.ScheduleJob(jobDetail, trigger);
+            //    Console.WriteLine("scheduler作业添加完成......");
+            //} 
             #endregion
-
-            #region Trigger 创建时间策略
-            ////创建时间策略 Cron
-            //ITrigger trigger = TriggerBuilder.Create()
-            //    .WithIdentity("testtrigger1", "group1")
-            //    //.StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(5))) //5秒后启动
-            //    .StartNow()//立即启动
-            //               //.WithCronSchedule("0 0/1 * * * ?")//每隔一分钟
-            //     .WithCronSchedule("0/10 * * * * ?")//每隔10秒运行一次
-            //    .WithDescription("This is TestJob's Trigger")
-            //    .Build();
-
-            //创建时间策略 Simple
-            ITrigger trigger = TriggerBuilder.Create()
-                    .WithIdentity("testtrigger1", "group1")
-                    //.StartNow()//立即启动
-                    .StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(5)))//5秒后启动
-                    .WithSimpleSchedule(x => x
-                        .WithIntervalInSeconds(10) //10秒循环一次
-                                                   //.RepeatForever()//一直执行
-                        .WithRepeatCount(2) //只循环10次
-                        )
-                    .WithDescription("This is TestJob's Trigger")
-                    .Build();
-
-            //trigger传参
-            trigger.JobDataMap.Add("parameter5", "存储过程");
-            trigger.JobDataMap.Add("parameter6", "222000");
-            trigger.JobDataMap.Add("parameter7", 333000);
-            trigger.JobDataMap.Add("Year", DateTime.Now.Year + 10);//加一下试试 
-            #endregion
-
-            await scheduler.ScheduleJob(jobDetail, trigger);
-            Console.WriteLine("scheduler作业添加完成......");
-
         }
     }
 }

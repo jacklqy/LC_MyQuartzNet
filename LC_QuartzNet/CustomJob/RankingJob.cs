@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 namespace LC_QuartzNet.CustomJob
 {
     /// <summary>
-    /// 定时任务
+    /// 排行榜计算任务
     /// </summary>
+    //[PersistJobDataAfterExecution]//执行后保留作业数据
+    [DisallowConcurrentExecution]//不允许并发执行，只有执行完了才能进入(重点)
     public class RankingJob : IJob
     {
         public Task Execute(IJobExecutionContext context)

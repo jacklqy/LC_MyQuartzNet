@@ -8,3 +8,12 @@ D:\test\LC_MyQuartZNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.csproj.CoreCompileInp
 D:\test\LC_MyQuartZNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.csproj.CopyComplete
 D:\test\LC_MyQuartZNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.dll
 D:\test\LC_MyQuartZNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.pdb
+G:\github\LC_MyQuartzNet\LC_QuartzNet\bin\Debug\LC_QuartzNet.dll
+G:\github\LC_MyQuartzNet\LC_QuartzNet\bin\Debug\LC_QuartzNet.pdb
+G:\github\LC_MyQuartzNet\LC_QuartzNet\bin\Debug\Quartz.dll
+G:\github\LC_MyQuartzNet\LC_QuartzNet\bin\Debug\Quartz.pdb
+G:\github\LC_MyQuartzNet\LC_QuartzNet\bin\Debug\Quartz.xml
+G:\github\LC_MyQuartzNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.csproj.CoreCompileInputs.cache
+G:\github\LC_MyQuartzNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.csproj.CopyComplete
+G:\github\LC_MyQuartzNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.dll
+G:\github\LC_MyQuartzNet\LC_QuartzNet\obj\Debug\LC_QuartzNet.pdb

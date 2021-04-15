@@ -21,64 +21,100 @@ namespace LC_QuartzNet.CustomListener
             });
         }
 
-        public Task JobDeleted(JobKey jobKey, CancellationToken cancellationToken = default)
+        public async Task JobDeleted(JobKey jobKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobDeleted");
+            });
         }
 
-        public Task JobInterrupted(JobKey jobKey, CancellationToken cancellationToken = default)
+        public async Task JobInterrupted(JobKey jobKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobInterrupted");
+            });
         }
 
-        public Task JobPaused(JobKey jobKey, CancellationToken cancellationToken = default)
+        public async Task JobPaused(JobKey jobKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobPaused");
+            });
         }
 
-        public Task JobResumed(JobKey jobKey, CancellationToken cancellationToken = default)
+        public async Task JobResumed(JobKey jobKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobResumed");
+            });
         }
 
-        public Task JobScheduled(ITrigger trigger, CancellationToken cancellationToken = default)
+        public async Task JobScheduled(ITrigger trigger, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobScheduled");
+            });
         }
 
-        public Task JobsPaused(string jobGroup, CancellationToken cancellationToken = default)
+        public async Task JobsPaused(string jobGroup, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobsPaused");
+            });
         }
 
-        public Task JobsResumed(string jobGroup, CancellationToken cancellationToken = default)
+        public async Task JobsResumed(string jobGroup, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobsResumed");
+            });
         }
 
-        public Task JobUnscheduled(TriggerKey triggerKey, CancellationToken cancellationToken = default)
+        public async Task JobUnscheduled(TriggerKey triggerKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobUnscheduled");
+            });
         }
 
-        public Task SchedulerError(string msg, SchedulerException cause, CancellationToken cancellationToken = default)
+        public async Task SchedulerError(string msg, SchedulerException cause, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerError");
+            });
         }
 
-        public Task SchedulerInStandbyMode(CancellationToken cancellationToken = default)
+        public async Task SchedulerInStandbyMode(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerInStandbyMode");
+            });
         }
 
-        public Task SchedulerShutdown(CancellationToken cancellationToken = default)
+        public async Task SchedulerShutdown(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerShutdown");
+            });
         }
 
-        public Task SchedulerShuttingdown(CancellationToken cancellationToken = default)
+        public async Task SchedulerShuttingdown(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerShuttingdown");
+            });
         }
 
         public async Task SchedulerStarted(CancellationToken cancellationToken = default)
@@ -97,9 +133,12 @@ namespace LC_QuartzNet.CustomListener
             });
         }
 
-        public Task SchedulingDataCleared(CancellationToken cancellationToken = default)
+        public async Task SchedulingDataCleared(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulingDataCleared");
+            });
         }
 
         public async Task TriggerFinalized(ITrigger trigger, CancellationToken cancellationToken = default)
@@ -110,24 +149,36 @@ namespace LC_QuartzNet.CustomListener
             });
         }
 
-        public Task TriggerPaused(TriggerKey triggerKey, CancellationToken cancellationToken = default)
+        public async Task TriggerPaused(TriggerKey triggerKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggerPaused");
+            });
         }
 
-        public Task TriggerResumed(TriggerKey triggerKey, CancellationToken cancellationToken = default)
+        public async Task TriggerResumed(TriggerKey triggerKey, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggerResumed");
+            });
         }
 
-        public Task TriggersPaused(string triggerGroup, CancellationToken cancellationToken = default)
+        public async Task TriggersPaused(string triggerGroup, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggersPaused");
+            });
         }
 
-        public Task TriggersResumed(string triggerGroup, CancellationToken cancellationToken = default)
+        public async Task TriggersResumed(string triggerGroup, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            await Task.Run(() =>
+            {
+                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggersResumed");
+            });
         }
     }
 }

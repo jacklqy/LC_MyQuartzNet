@@ -1,0 +1,44 @@
+﻿正在安装程序集“G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.InstallLog
+   assemblypath = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe
+正在安装服务 Jack'sTest...
+已成功安装服务 Jack'sTest。
+正在日志 Application 中创建 EventLog 源 Jack'sTest...
+正在提交程序集“G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.InstallLog
+   assemblypath = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe
+正在卸载程序集“G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.InstallLog
+   assemblypath = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe
+正在移除 EventLog 源 Jack'sTest。
+正在从系统中移除服务 Jack'sTest...
+已成功地从系统中移除服务 Jack'sTest。
+尝试停止服务 Jack'sTest。
+正在安装程序集“G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.InstallLog
+   assemblypath = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe
+正在安装服务 Jack'sTest...
+已成功安装服务 Jack'sTest。
+正在日志 Application 中创建 EventLog 源 Jack'sTest...
+正在提交程序集“G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.InstallLog
+   assemblypath = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe
+正在卸载程序集“G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.InstallLog
+   assemblypath = G:\github\LC_MyQuartzNet\LC_QuartzNetWindowsService\bin\Debug\LC_QuartzNetWindowsService.exe
+正在移除 EventLog 源 Jack'sTest。
+正在从系统中移除服务 Jack'sTest...
+已成功地从系统中移除服务 Jack'sTest。
+尝试停止服务 Jack'sTest。

@@ -54,12 +54,19 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Resources\Quartz.NET 配置文件详解.docx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LC_QuartzNet\LC_QuartzNet.csproj">
       <Project>{59c8f729-5585-4400-ab9e-61812edc48eb}</Project>
       <Name>LC_QuartzNet</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CfgFiles\quartz_jobs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Cron Expressions——Cron 表达式.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

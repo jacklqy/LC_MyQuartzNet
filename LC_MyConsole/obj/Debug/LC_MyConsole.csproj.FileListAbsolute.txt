@@ -11,3 +11,17 @@ D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.csproj.CoreCompileInp
 D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.csproj.CopyComplete
 D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.exe
 D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.pdb
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\LC_MyConsole.exe.config
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\LC_MyConsole.exe
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\LC_MyConsole.pdb
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\LC_QuartzNet.dll
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\Quartz.dll
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\LC_QuartzNet.pdb
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\Quartz.pdb
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\Quartz.xml
+G:\github\LC_MyQuartzNet\LC_MyConsole\obj\Debug\LC_MyConsole.csprojAssemblyReference.cache
+G:\github\LC_MyQuartzNet\LC_MyConsole\obj\Debug\LC_MyConsole.csproj.CoreCompileInputs.cache
+G:\github\LC_MyQuartzNet\LC_MyConsole\obj\Debug\LC_MyConsole.csproj.CopyComplete
+G:\github\LC_MyQuartzNet\LC_MyConsole\obj\Debug\LC_MyConsole.exe
+G:\github\LC_MyQuartzNet\LC_MyConsole\obj\Debug\LC_MyConsole.pdb
+G:\github\LC_MyQuartzNet\LC_MyConsole\bin\Debug\CfgFiles\quartz_jobs.xml

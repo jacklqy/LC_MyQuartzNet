@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+  
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+  <schedule>
+    <job>
+      <name>TestJob</name>
+      <!--分组必须一致-->
+      <group>TestJob组</group>
+      <description>定时更新商品库存TestJob</description>
+      <!--Job类型全名称和dll名称-->
+      <job-type>LC_QuartzNet.CustomJob.TestJob,LC_QuartzNet</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>TestJobTrigger1</name>
+        <!--分组必须一致-->
+        <group>TestJob组</group>
+        <!--必须和job里面配置的一致-->
+        <job-name>TestJob</job-name>
+        <!--分组必须一致-->
+        <job-group>TestJob组</job-group>
+        <!--每隔15秒运行一次-->
+        <cron-expression>0/15 * * * * ?</cron-expression>
+      </cron>
+    </trigger>
+    <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+    <job>
+      <name>GoodJob</name>
+      <!--分组必须一致-->
+      <group>GoodJob组</group>
+      <description>定时同步订单库存GoodJob</description>
+      <!--Job类型全名称和dll名称-->
+      <job-type>LC_QuartzNet.CustomJob.GoodJob,LC_QuartzNet</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>GoodJobTrigger1</name>
+        <!--分组必须一致-->
+        <group>GoodJob组</group>
+        <!--必须和job里面配置的一致-->
+        <job-name>GoodJob</job-name>
+        <!--分组必须一致-->
+        <job-group>GoodJob组</job-group>
+        <!--每隔10秒运行一次-->
+        <cron-expression>0/10 * * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </schedule>
+</job-scheduling-data>

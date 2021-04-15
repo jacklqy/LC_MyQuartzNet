@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomJob\GoodJob.cs" />
     <Compile Include="CustomJob\MailJob.cs" />
     <Compile Include="CustomJob\RankingJob.cs" />
     <Compile Include="CustomJob\TestJob.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="CustomLog\CustomLogProvider.cs" />
     <Compile Include="DispatchManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
