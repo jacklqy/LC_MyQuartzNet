@@ -1,0 +1,13 @@
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\LC_MyConsole.exe.config
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\LC_MyConsole.exe
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\LC_MyConsole.pdb
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\LC_QuartzNet.dll
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\Quartz.dll
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\LC_QuartzNet.pdb
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\Quartz.pdb
+D:\test\LC_MyQuartZNet\LC_MyConsole\bin\Debug\Quartz.xml
+D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.csprojAssemblyReference.cache
+D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.csproj.CoreCompileInputs.cache
+D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.csproj.CopyComplete
+D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.exe
+D:\test\LC_MyQuartZNet\LC_MyConsole\obj\Debug\LC_MyConsole.pdb
