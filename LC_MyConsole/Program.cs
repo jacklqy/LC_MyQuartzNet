@@ -16,10 +16,6 @@ namespace LC_MyConsole
     /// 6 自定义的定时调度框架
     /// 
     /// 
-    /// 1 定时任务可视化界面管理
-    /// 2 配置文件使用和IOC容器结合
-    /// 3 WindowsService应用
-    /// 
     /// 可视化管理工具：就是为了解决定时任务执行过程中，需要监控--人工介入这种需求---Web系统(只能运行在当前服务器)
     ///   a)建立mvc web项目--4.5.2以上版本
     ///   b)网站NuGet添加引用Quartz(3.0.7.0版本和作业那边的版本要一致)/CrystalQuartz.Remote/System.Diagnostics.DiagnosticSource

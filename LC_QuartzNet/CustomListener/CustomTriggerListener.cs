@@ -24,7 +24,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomTriggerListener)} TriggerComplete {context.JobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomTriggerListener)} TriggerComplete {context.JobDetail.Description}");
             });
         }
 
@@ -32,7 +32,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomTriggerListener)} TriggerFired {context.JobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomTriggerListener)} TriggerFired {context.JobDetail.Description}");
             });
         }
 
@@ -40,7 +40,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomTriggerListener)} TriggerMisfired");
+                //Console.WriteLine($"This is {nameof(CustomTriggerListener)} TriggerMisfired");
             });
         }
 
@@ -55,7 +55,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomTriggerListener)} VetoJobExecution {context.JobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomTriggerListener)} VetoJobExecution {context.JobDetail.Description}");
             });
             return false;//false才能继续执行
         }

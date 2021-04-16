@@ -17,7 +17,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobAdded {jobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobAdded {jobDetail.Description}");
             });
         }
 
@@ -25,7 +25,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobDeleted");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobDeleted");
             });
         }
 
@@ -33,7 +33,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobInterrupted");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobInterrupted");
             });
         }
 
@@ -41,7 +41,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobPaused");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobPaused");
             });
         }
 
@@ -49,7 +49,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobResumed");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobResumed");
             });
         }
 
@@ -57,7 +57,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobScheduled");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobScheduled");
             });
         }
 
@@ -65,7 +65,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobsPaused");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobsPaused");
             });
         }
 
@@ -73,7 +73,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobsResumed");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobsResumed");
             });
         }
 
@@ -81,7 +81,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobUnscheduled");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} JobUnscheduled");
             });
         }
 
@@ -89,7 +89,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerError");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerError");
             });
         }
 
@@ -97,7 +97,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerInStandbyMode");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerInStandbyMode");
             });
         }
 
@@ -105,7 +105,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerShutdown");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerShutdown");
             });
         }
 
@@ -113,7 +113,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerShuttingdown");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerShuttingdown");
             });
         }
 
@@ -121,7 +121,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerStarted");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerStarted");
             });
         }
 
@@ -129,7 +129,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerStarting");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulerStarting");
             });
         }
 
@@ -137,7 +137,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulingDataCleared");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} SchedulingDataCleared");
             });
         }
 
@@ -145,7 +145,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggerFinalized");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggerFinalized");
             });
         }
 
@@ -161,7 +161,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggerResumed");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggerResumed");
             });
         }
 
@@ -169,7 +169,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggersPaused");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggersPaused");
             });
         }
 
@@ -177,7 +177,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggersResumed");
+                //Console.WriteLine($"This is {nameof(CustomSchedulerListener)} TriggersResumed");
             });
         }
     }

@@ -11,6 +11,10 @@ namespace LC_QuartzNet
 {
     public class ScheduleManager
     {
+        /// <summary>
+        /// 构建Scheduler[使其可以和网站建立tcp监听，方便后期通过网站进行可视化维护Job]
+        /// </summary>
+        /// <returns></returns>
         public async static Task<IScheduler> BuildScheduler()
         {
             var properties = new NameValueCollection();

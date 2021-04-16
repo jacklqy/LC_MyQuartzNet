@@ -26,7 +26,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomJobListener)} JobExecutionVetoed {context.JobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomJobListener)} JobExecutionVetoed {context.JobDetail.Description}");
             });
         }
 
@@ -40,7 +40,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomJobListener)} JobToBeExecuted {context.JobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomJobListener)} JobToBeExecuted {context.JobDetail.Description}");
             });
         }
 
@@ -55,7 +55,7 @@ namespace LC_QuartzNet.CustomListener
         {
             await Task.Run(() =>
             {
-                Console.WriteLine($"This is {nameof(CustomJobListener)} JobWasExecuted {context.JobDetail.Description}");
+                //Console.WriteLine($"This is {nameof(CustomJobListener)} JobWasExecuted {context.JobDetail.Description}");
             });
         }
     }

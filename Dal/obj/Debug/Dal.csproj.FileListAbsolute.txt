@@ -1,0 +1,13 @@
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\Dal.dll
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\Dal.pdb
+D:\github\LC_MyQuartzNet\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+D:\github\LC_MyQuartzNet\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+D:\github\LC_MyQuartzNet\Dal\obj\Debug\Dal.dll
+D:\github\LC_MyQuartzNet\Dal\obj\Debug\Dal.pdb
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\LC_Common.dll
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\Model.dll
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\log4net.dll
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\LC_Common.pdb
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\Model.pdb
+D:\github\LC_MyQuartzNet\Dal\bin\Debug\log4net.xml
+D:\github\LC_MyQuartzNet\Dal\obj\Debug\Dal.csproj.CopyComplete

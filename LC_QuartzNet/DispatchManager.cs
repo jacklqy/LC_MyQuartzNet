@@ -60,7 +60,7 @@ namespace LC_QuartzNet
             #endregion
 
             #region scheduler 创建单元/实例
-            Console.WriteLine("初始化scheduler......");
+            //Console.WriteLine("初始化scheduler......");
             //StdSchedulerFactory factory = new StdSchedulerFactory();
             //IScheduler scheduler = await factory.GetScheduler();
             IScheduler scheduler = await ScheduleManager.BuildScheduler();
@@ -83,7 +83,7 @@ namespace LC_QuartzNet
             await scheduler.Start();
             #endregion
 
-            #region 通过配置文件后，这里就可以不需要了
+            #region 通过quartz_jobs.xml配置文件后，这里就可以不需要了，如果在需要传参的情况下可以考虑使用以下方式
             ////1
             //{
             //    #region Job 创建作业

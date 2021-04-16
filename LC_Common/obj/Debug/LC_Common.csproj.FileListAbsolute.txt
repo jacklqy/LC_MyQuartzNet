@@ -7,3 +7,12 @@ G:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.csproj.CoreCompileInputs.
 G:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.csproj.CopyComplete
 G:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.dll
 G:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.pdb
+D:\github\LC_MyQuartzNet\LC_Common\bin\Debug\LC_Common.dll
+D:\github\LC_MyQuartzNet\LC_Common\bin\Debug\LC_Common.pdb
+D:\github\LC_MyQuartzNet\LC_Common\bin\Debug\log4net.dll
+D:\github\LC_MyQuartzNet\LC_Common\bin\Debug\log4net.xml
+D:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.csproj.CoreCompileInputs.cache
+D:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.csproj.CopyComplete
+D:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.dll
+D:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.pdb
+D:\github\LC_MyQuartzNet\LC_Common\obj\Debug\LC_Common.csprojAssemblyReference.cache

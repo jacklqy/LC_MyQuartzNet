@@ -1,0 +1,11 @@
+D:\github\LC_MyQuartzNet\Model\bin\Debug\Model.dll
+D:\github\LC_MyQuartzNet\Model\bin\Debug\Model.pdb
+D:\github\LC_MyQuartzNet\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\github\LC_MyQuartzNet\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\github\LC_MyQuartzNet\Model\obj\Debug\Model.dll
+D:\github\LC_MyQuartzNet\Model\obj\Debug\Model.pdb
+D:\github\LC_MyQuartzNet\Model\bin\Debug\LC_Common.dll
+D:\github\LC_MyQuartzNet\Model\bin\Debug\log4net.dll
+D:\github\LC_MyQuartzNet\Model\bin\Debug\LC_Common.pdb
+D:\github\LC_MyQuartzNet\Model\bin\Debug\log4net.xml
+D:\github\LC_MyQuartzNet\Model\obj\Debug\Model.csproj.CopyComplete

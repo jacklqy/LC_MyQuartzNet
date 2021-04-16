@@ -46,8 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logger.cs" />
+    <Compile Include="ConfigManager\ConfigrationManager.cs" />
+    <Compile Include="ConfigManager\SqlConnectionPool.cs" />
+    <Compile Include="log4net\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlFilter\FilterExtend.cs" />
+    <Compile Include="SqlFilter\LcKeyAttribute.cs" />
+    <Compile Include="SqlMapping\LcAbstractMappingAttribute.cs" />
+    <Compile Include="SqlMapping\LcCloumnAttribute.cs" />
+    <Compile Include="SqlMapping\LcTableAttribute.cs" />
+    <Compile Include="SqlMapping\MappingExtend.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

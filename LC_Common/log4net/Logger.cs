@@ -15,7 +15,7 @@ namespace LC_Common
         {
             XmlConfigurator.Configure(new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CfgFiles\\log4net.cfg.xml")));
             ILog Log = LogManager.GetLogger(typeof(Logger));
-            Log.Info("系统初始化Logger模块");
+            Log.Info("系统初始化Logger模块...");
         }
 
         private ILog loger = null;
@@ -31,7 +31,7 @@ namespace LC_Common
         /// <param name="ex"></param>
         public void Error(string msg = "出现异常", Exception ex = null)
         {
-            Console.WriteLine(msg);
+            //Console.WriteLine(msg);
             loger.Error(msg, ex);
         }
 
@@ -41,7 +41,7 @@ namespace LC_Common
         /// <param name="msg"></param>
         public void Warn(string msg)
         {
-            Console.WriteLine(msg);
+            //Console.WriteLine(msg);
             loger.Warn(msg);
         }
 
@@ -51,7 +51,7 @@ namespace LC_Common
         /// <param name="msg"></param>
         public void Info(string msg)
         {
-            Console.WriteLine(msg);
+            //Console.WriteLine(msg);
             loger.Info(msg);
         }
 
@@ -61,7 +61,7 @@ namespace LC_Common
         /// <param name="msg"></param>
         public void Debug(string msg)
         {
-            Console.WriteLine(msg);
+            //Console.WriteLine(msg);
             loger.Debug(msg);
         }
 

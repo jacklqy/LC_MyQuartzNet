@@ -47,8 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomJob\GoodJob.cs" />
-    <Compile Include="CustomJob\MailJob.cs" />
-    <Compile Include="CustomJob\RankingJob.cs" />
     <Compile Include="CustomJob\TestJob.cs" />
     <Compile Include="CustomListener\CustomJobListener.cs" />
     <Compile Include="CustomListener\CustomSchedulerListener.cs" />
@@ -61,6 +59,19 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{1603b77e-16ee-43c3-a65f-0431bae02076}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LC_Common\LC_Common.csproj">
+      <Project>{1a7d723f-4b2a-43cf-9fed-c858d966497a}</Project>
+      <Name>LC_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{a78398b1-06d1-4d90-9eb2-8aa92c48f69f}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
