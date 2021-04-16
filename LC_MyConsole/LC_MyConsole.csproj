@@ -54,6 +54,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Resources\dyd_bs_MQ_log.bak" />
     <None Include="Resources\Quartz.NET 配置文件详解.docx" />
   </ItemGroup>
   <ItemGroup>

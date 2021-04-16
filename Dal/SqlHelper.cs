@@ -13,7 +13,7 @@ namespace Dal
 {
     public class SqlHelper : SqlBase
     {
-        #region 批量新增
+        #region 高性能批量新增
         public static void BatchInsertTest()
         {
             List<tb_log> logs = new List<tb_log>();
