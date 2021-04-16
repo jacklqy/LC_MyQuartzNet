@@ -4,8 +4,9 @@
     /// 2 核心对象Job、Trigger解析
     /// 3 三种Listener扩展订制
     /// 4 可视化界面管理&WindowsService承载
-    /// 5 IOC容器结合
+    /// 5 整合log4net
     /// 6 自定义的定时调度框架
+    /// 7 泛型缓存
     /// 
     /// 
     /// 1 定时任务可视化界面管理
@@ -38,7 +39,8 @@
     /// 结合起来，开发者需要写的，就是一个Job业务，再就是做好配置文件Job和Trigger，然后在做一下网站的可视化配置。可以扩展日志、扩展Listener
     /// 
     /// </summary>
-    
+ 
+
 ![image](https://user-images.githubusercontent.com/26539681/114903210-2675fd00-9e49-11eb-8a0e-35573ab7946a.png)
 ![image](https://user-images.githubusercontent.com/26539681/114903234-2fff6500-9e49-11eb-859c-c7bcf86f9099.png)
 ![image](https://user-images.githubusercontent.com/26539681/114903376-558c6e80-9e49-11eb-94f6-4b75b8a7a480.png)
