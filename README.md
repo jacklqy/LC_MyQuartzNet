@@ -1,3 +1,6 @@
+# 前言
+  定时任务  野点的方案：电脑任务计划+curl  正规的方案：hangfire或Quartz 自己开发方案：window service 
+
 # LC_MyQuartzNet
     /// <summary>
     /// 1 QuartZ引入&初始化&使用
