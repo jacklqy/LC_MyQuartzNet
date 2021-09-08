@@ -1,5 +1,5 @@
 # 前言
-  定时任务  野点的方案：电脑任务计划+curl  正规的方案：hangfire或Quartz 自己开发方案：window service 
+  定时任务  a)野点的方案：电脑任务计划+curl  b)正规的方案：hangfire或Quartz c)自己开发方案：window service d)asp.net core使用IHostedService和BackgroundService类在微服务中实现后台任务
 
 # LC_MyQuartzNet
     /// <summary>
