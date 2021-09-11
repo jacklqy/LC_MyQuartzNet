@@ -1,4 +1,4 @@
-# 前言
+# 前言 官网：https://www.quartz-scheduler.net/
   定时任务多种实现方式  a)野点的方案：电脑任务计划+curl  b)正规的方案：hangfire(轻量级)或Quartz(繁重) c)自己开发方案：window service d)asp.net core使用IHostedService和BackgroundService类在微服务中实现后台任务 e)FluentScheduler
 
 # LC_MyQuartzNet
